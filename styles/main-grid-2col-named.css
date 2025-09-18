@@ -1,0 +1,106 @@
+div.gridcontainer {
+  display: grid;
+  grid-template-columns: 15rem auto;
+  grid-template-areas:
+   "pageheader  pageheader"
+   "pagenavigation  maincontent"
+   "pagefooter pagefooter";
+}
+
+header {
+  grid-area: pageheader;
+}
+
+footer { grid-area: pagefooter;}
+
+nav { grid-area: pagenavigation;}
+
+main { grid-area: maincontent;}
+
+
+/* styles below have nothing to do with grid or layout */
+body {
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightblue;
+}
+
+nav {
+  background-color: brown;
+  ;
+}
+
+main {
+  background-color: linen;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  background-color: yellow;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav a:link,
+nav a:visited {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  border-bottom: 1px solid white;
+}
+
+nav li:first-child a:link {
+  border-top: 1px solid white;
+}
+
+nav a:hover,
+nav a:active {
+  color: brown;
+  background-color: white;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
