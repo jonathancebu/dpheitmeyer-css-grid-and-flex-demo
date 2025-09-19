@@ -80,8 +80,10 @@ nav li.login a:hover {
 main div.container {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
 }
+/*or grid-template-columns: 1fr 1fr 1fr (3 columns or fractions with same width or grid-template-columns: repeat(3, 1fr)*/
+/*auto-fit allows the browser to adjust how many columns to display. minmax tells the browser the min and max size of each column*/
 
 main div.container section {
     border-style: solid;
